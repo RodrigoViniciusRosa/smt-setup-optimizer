@@ -15,7 +15,7 @@ Este projeto automatiza o cruzamento de relatórios de programação de máquina
 * **Banco de Dados:** SQLite integrado via ORM SQLAlchemy.
 * **Segurança e Arquitetura:** Revisão lógica auxiliada por Inteligência Artificial para prevenção de vazamento de conexões (session leaks), resolução de loops redundantes de consultas SQL (problema N+1) e otimização de performance.
 
-🔗 Acesse a aplicação em produção: smt-setup-optimizer.streamlit.app
+🔗 Acesse a aplicação em produção: (https://smt-setup-optimizer.streamlit.app/)
 
 ### 🛠️ Como Testar a Aplicação (Passo a Passo)
 
