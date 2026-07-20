@@ -1,9 +1,15 @@
+import os
 from sqlalchemy import create_engine, Column, String, DateTime
 from sqlalchemy.orm import declarative_base, sessionmaker
 from datetime import datetime
 
-# 1. Define onde o banco de dados será aberto/salvo.
-DATABASE_URL = "sqlite:///banco_setup.db"
+# DETECÇÃO DINÂMICA:
+# Se o sistema operacional for Windows ('nt'), usa o banco local.
+# Se for Linux (Streamlit Cloud), usa a pasta temporária /tmp/
+if os.name == "nt":
+    DATABASE_URL = "sqlite:///banco_setup.db"
+else:
+    DATABASE_URL = "sqlite:////tmp/banco_setup.db"
 
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

@@ -281,7 +281,7 @@ if "msg_delete" in st.session_state:
 
 # Lista de Endereços Oficiais
 lista_enderecos = [
-    "Prateleira A", "Prateleira B", "Prateleira C", "Prateleira D"
+    "Kanban", "Prateleira A", "Prateleira B", "Prateleira C", "Prateleira D"
 ]
 
 # ================= TELA 1: PROCESSAR SETUP =================
